@@ -1,0 +1,21 @@
+<html>
+<title>Web Guesser
+</title>
+<head><h2> WELCOME PEOPLE!</h2></head>
+ <body>
+ 	<p> 
+ 		<%if guess >= number
+				puts "Too high!"
+			elsif guess <= number
+				puts "Too low!"
+			end %>
+	</p>
+  <p>
+     The SECRET NUMBER is <%= number %>
+  </p>
+  <form>
+ 		<input type='text' name='guess' />
+ 		<input type='submit' value='Guess!' />
+	</form>
+</body>
+</html>
