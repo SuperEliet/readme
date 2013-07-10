@@ -1,17 +1,21 @@
 <html>
 <title>Web Guesser
 </title>
-<head><h2> WELCOME PEOPLE!</h2></head>
+<head><h1> WELCOME INTERNET USERS OF MASS GUESS-TRUCTION!<h6>See what i did there..?</h6></h1></head>
  <body>
+ 	<body style = 'background: orange' >
+ 	<p><h3>Begin Guessing</h3></p>
  	<p> 
- 		<%if guess >= number
-				puts "Too high!"
-			elsif guess <= number
-				puts "Too low!"
-			end %>
+ 		<%if guess > number%>
+			"Too high!"				
+		<%elsif guess < number%>
+			"Too low!"
+		<%elsif guess == number%>
+			"You got it right!" <%= number %>
+		<%end %>
 	</p>
   <p>
-     The SECRET NUMBER is <%= number %>
+     The SECRET NUMBER is: <%= number %>
   </p>
   <form>
  		<input type='text' name='guess' />
